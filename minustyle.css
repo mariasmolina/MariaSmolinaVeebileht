@@ -1,7 +1,7 @@
-img{
+#minu_pilt{
     border: 5px solid grey;
-    border-radius: 160px;
-    width: 30%;
+    border-radius: 30px;
+    width: 20%;
     padding: 2%
 }
 h1{
@@ -14,10 +14,25 @@ h1{
 body{
     font-family: Georgia, Times, serif;
     background-color: lavender;
+
 }
 ul{
     list-style-type: square;
     margin-left: 5%;
     border: 1pt dotted grey;
     width: 30%;
+}
+#mvp_pilt{
+    width: 40%;
+    margin: 0 auto;
+}
+div#issue1{
+    ul{
+        list-style-type: square;
+        margin-left: 5%;
+        border: 1pt dotted grey;
+        width: 70%;
+        background-color: white;
+    }
+
 }
