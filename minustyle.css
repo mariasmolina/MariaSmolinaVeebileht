@@ -1,38 +1,63 @@
 #minu_pilt{
-    border: 5px solid grey;
-    border-radius: 30px;
-    width: 20%;
-    padding: 2%
+    border: 6px solid grey;
+    border-radius: 50%;
+    width: 17%;
+    padding: 0.7%
 }
 h1{
-    font-family: Georgia, Times, serif;
+    font-family: Quicksand, Poppins, sans-serif;
     letter-spacing: 2px;
     font-variant: small-caps;
-    color: darkgreen;
+    color: #008b8b;
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 body{
-    font-family: Georgia, Times, serif;
-    background-color: lavender;
+    font-family: Nunito, Poppins, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
 
 }
 ul{
     list-style-type: square;
-    margin-left: 5%;
+    list-style-position: inside;
     border: 1pt dotted grey;
-    width: 30%;
+    width: 60%;
+    margin-left: 20%;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: left;
 }
-#mvp_pilt{
-    width: 40%;
-    margin: 0 auto;
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
+#list1, #list2, #list3 {
+    width: 70%;
+}
+
 div#issue1{
-    ul{
-        list-style-type: square;
-        margin-left: 5%;
-        border: 1pt dotted grey;
-        width: 70%;
-        background-color: white;
+
+    h2{
+        font-family: Quicksand, Poppins, sans-serif;
+        color: #008b8b;
     }
 
+    #mvp_pilt{
+        width: 30%;
+        float: left;
+        margin-left: 2%;
+    }
+    ul{
+        list-style-type: circle;
+        border: 1pt dashed grey;
+        width: 40%;
+        background-color: white;
+        margin-left: 45%;
+    }
 }
