@@ -4,41 +4,47 @@
     width: 17%;
     padding: 0.7%
 }
-h1{
+
+    h1{
     font-family: Quicksand, Poppins, sans-serif;
     letter-spacing: 2px;
     font-variant: small-caps;
     color: #008b8b;
-    display: flex;
-    text-align: center;
     align-items: center;
-    justify-content: center;
 }
+
+h3{
+    font-family: Quicksand, Poppins, sans-serif;
+    color: black;
+    align-items: center;
+}
+
 body{
     font-family: Nunito, Poppins, sans-serif;
     background-color: #f0f8ff;
     text-align: center;
+}
 
-}
-ul{
-    list-style-type: square;
-    list-style-position: inside;
-    border: 1pt dotted grey;
-    width: 60%;
-    margin-left: 20%;
-    padding: 10px;
-    background-color: #ffffff;
-    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    text-align: left;
-}
 .container {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-#list1, #list2, #list3 {
+
+div#list1, div#list2, div#list3 {
     width: 70%;
+    ul{
+        list-style-type: square;
+        list-style-position: inside;
+        border: 1pt dotted grey;
+        width: 60%;
+        margin-left: 20%;
+        padding: 10px;
+        background-color: #ffffff;
+        box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        text-align: left;
+    }
 }
 
 div#issue1{
@@ -49,15 +55,62 @@ div#issue1{
     }
 
     #mvp_pilt{
-        width: 30%;
+        width: 27%;
         float: left;
         margin-left: 2%;
     }
     ul{
         list-style-type: circle;
-        border: 1pt dashed grey;
-        width: 40%;
+        border: 2pt dashed #008b8b;
+        padding: 10px;
+        list-style-position: inside;
+        width: 52%;
         background-color: white;
-        margin-left: 45%;
+        margin-left: 38%;
+        text-align: left;
+    }
+}
+
+div#issue2{
+
+    #repo{
+        border-radius: 10px;
+    }
+
+    h2{
+        font-family: Quicksand, Poppins, sans-serif;
+        color: #008b8b;
+        text-align: center;
+    }
+
+    #ul1{
+        list-style-type: disc;
+        list-style-position: inside;
+        border: 1pt solid darkblue;
+        width: 60%;
+        margin-left: 19%;
+        padding: 10px;
+        background-color: #ffffff;
+        box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    #ul{
+        list-style-type: circle;
+    }
+
+    #ul2{
+        list-style-type: disc;
+        list-style-position: inside;
+        border: 1pt solid white;
+        width: 60%;
+        margin-left: 19%;
+        padding: 10px;
+        background-color: #121D2F;
+        box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        text-align: left;
+        color: #ffff;
     }
 }
