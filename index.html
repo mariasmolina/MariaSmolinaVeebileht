@@ -16,22 +16,23 @@
 <div class="container">
 <!--Esimene plokk list1-->
 <div id="list1">
-<strong>Õpitud ained on:</strong>
+<strong>Õpitud ained:</strong>
 <ul>
     <li>Projekti loomine</li>
     <li>Kontoritöö tarkvara</li>
-    <li>Arvuti- ja taristu osad</li>
+    <li>Arvuti ja -taristu osad</li>
     <li>Multimeedia</li>
     <li>Programmeerimine</li>
+    <li>Operatsioonisüsteemide alused</li>
 </ul>
 </div>
 <!--Teine plokk list2-->
 <div id="list2">
-<strong>Ma valdan:</strong>
+<strong>Õpitud keeled:</strong>
 <ul>
-    <li>Eesti keelt</li>
-    <li>Inglise keelt</li>
-    <li>Vene keelt</li>
+    <li>Eesti keel</li>
+    <li>Inglise keel</li>
+    <li>Vene keel</li>
 </ul>
 </div>
 <!--Kolmas plokk list3-->
@@ -42,16 +43,12 @@
     <li>Adobe Illustrator, Photoshop</li>
     <li>SQL Server Management Studio</li>
     <li>Visual Studio (Python, ASP.NET)</li>
+    <li>Oracle VirtualBox (Linux)</li>
     <li>Web Storm</li>
-    <li>Oracle VirtualBox</li>
     <li>Git CMD</li>
 </ul>
 </div>
 </div>
-<!--link e-portfooliosse-->
-<i>Siin saab näha minu <a href="https://mariasmolina24.thkit.ee/wp/" target="_blank">
-    WP portfoolio</a></i>
-<br>
 <br>
 <hr>
 <!--Ülesanne issue1-->
@@ -70,6 +67,52 @@
         <li><strong>Parandan toodet:</strong>Teen muudatusi ja täiustusi vastavalt sellele, mida kasutajad on öelnud.</li>
         <li><strong>Säästan aega ja raha:</strong> Ei raiska aega ja raha funktsioonidele, mida kasutajad ei vaja, vaid keskendun sellele, mis on kõige olulisem.</li>
     </uL>
+</div>
+<br>
+<br>
+<br>
+<p><hr>
+<!--Ülesanne issue2-->
+<div id="issue2">
+    <br>
+    <h2>Remote repo tegemine</h2>
+    <p><strong>Remote repository</strong> Git-is on kaugserver, kus hoitakse koodiversioone ja millele pääseb ligi üle võrgu. Git võimaldab arendajatel hallata ja jagada koodi erinevate meeskondade ja masinate vahel, et teha koostööd.</p>
+    <br>
+    <p><i><strong>Remote Git-repository loomiseks ja sellega töötamiseks järgige neid samme:</strong></i></p>
+    <!--Loend ja alamloend-->
+    <uL id="ul1">
+        <li>Looge uus repository <strong>GitHub-is</strong>
+        <ul>
+            <li>Avage <strong>GitHub</strong> ja logige sisse oma kontole</li>
+            <li>Klõpsake nuppu <strong>New repository</strong></li>
+            <li>Lisage repository'le nimi ja vajutage <strong>Create repository</strong></li>
+        </ul>
+        </li>
+        <li>Valige <strong>SSH</strong> URL ja kopeerige seda</li>
+        <li>Remote repo tegemiseks kasutage terminalis järgmist käsku:
+            <uL>
+                <li><strong>git remote add origin</strong><i> https://github.com/teie_kasutajanimi/repository_nimi.git</i> — määrab kaugrepo, kuhu teie kohalik kood saadetakse</li>
+            </uL>
+        </li>
+        <li>Kontrollige kaug-repositooriumi sidumist:
+            <uL>
+                <li><strong>git remote -v</strong> — kui olete loonud või liitunud olemasoleva kaugrepo'ga, saate kaugrepo URL-i kontrollida järgmise käsuga</li>
+            </uL>
+        </li>
+    </uL>
+    <img id="repo" src="repo.png" alt="repo"/>
+    <uL id="ul2">
+        <li>Teised käaskud seotud remote repoga:
+            <ul>
+                <li><strong>git remote remove origin</strong> <i>"repo nimi"</i> — eemaldab kaug-repositooriumi</li>
+                <li><strong>git remote set-url</strong> — muudab kaug-repositooriumi URL-i</li>
+                <li><strong>git remote rename</strong><i> "vana repo nimi" "uus repo nimi"</i> — muudab kaug-repositooriumi nime</li>
+                <li><strong>git push</strong> — saadab lokaalsed muudatused kaug-repositooriumisse</li>
+                <li><strong>git pull</strong> — tõmbab kaug-repositooriumist muudatused kohalikku repositooriumisse</li>
+            </ul>
+        </li>
+    </uL>
+<p><i>Antud sammud on piisavad kaug-repositooriumi loomiseks ja haldamiseks. Kui kasutate SSH-d, veenduge, et teie arvutis on õigesti seadistatud SSH-võtmed.</i></p>
 </div>
 </body>
 </html>
