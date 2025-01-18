@@ -9,7 +9,7 @@ h1{
     font-family: Quicksand, Poppins, sans-serif;
     letter-spacing: 2px;
     font-variant: small-caps;
-    color: #008b8b;
+    color: darkcyan;
     align-items: center;
 }
 
@@ -19,21 +19,33 @@ h3{
     align-items: center;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+#nav {
+    text-align: center;
 }
 
-#nav{
-    border: none;
-    box-shadow: none;
-    background: transparent;
-    text-align: center;
-    text-transform: uppercase;
+#nav li {
+    display: inline-block;
+    margin: 0 20px;
 }
+
+#nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#nav a:hover {
+    background-color: slategray;
+    color: white;
+}
+
 body{
     font-family: Nunito, Poppins, sans-serif;
-    background-color: #f0f8ff;
+    background-color: aliceblue;
     text-align: center;
 }
 
@@ -63,7 +75,7 @@ div#issue1{
 
     h2{
         font-family: Quicksand, Poppins, sans-serif;
-        color: #008b8b;
+        color: steelblue;
     }
 
     #mvp_pilt{
@@ -73,7 +85,7 @@ div#issue1{
     }
     ul{
         list-style-type: circle;
-        border: 2pt dashed #008b8b;
+        border: 2pt dashed darkcyan;
         padding: 10px;
         list-style-position: inside;
         width: 52%;
@@ -91,7 +103,7 @@ div#issue2{
 
     h2{
         font-family: Quicksand, Poppins, sans-serif;
-        color: #008b8b;
+        color: steelblue;
         text-align: center;
     }
 
@@ -119,7 +131,7 @@ div#issue2{
         width: 60%;
         margin-left: 19%;
         padding: 10px;
-        background-color: #121D2F;
+        background-color: slategray;
         box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 8px;
         text-align: left;
