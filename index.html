@@ -18,6 +18,7 @@
         <li><a href="https://www.tthk.ee/" target="_blank">TTHK</a></li>
     </ul>
 </nav>
+<br>
 <!--pilt-->
 <img id="minu_pilt" src="prog2.png" alt="minu pilt"/>
 
@@ -71,7 +72,8 @@
     <img id="mvp_pilt" src="mvp1.png" alt="mvp pilt"/>
     <h2>MVP mõiste</h2>
     <br>
-    <a href="https://habr.com/ru/companies/productstar/articles/508892/" style="font-weight: bold;">Minimal Viable Product (MVP)</a> - toote, teenuse või teenuse testversioon, millel on minimaalne funktsioonide kogum (mõnikord isegi üks), mis toob lõpptarbijale väärtust.
+    <a href="https://habr.com/ru/companies/productstar/articles/508892/" style="font-weight: bold;">Minimal Viable Product (MVP)</a> - on toote või teenuse esialgne versioon, millel on ainult kõige olulisemad funktsioonid, mis pakuvad väärtust lõpptarbijale.
+    <p><strong>MVP eesmärk</strong> on toote turule toomine võimalikult kiirelt ja väheste kuludega, et testida idee elujõulisust ning koguda kasutajate tagasisidet. See lähenemine aitab vältida liigsete funktsioonide arendamist, mis ei pruugi kasutajatele väärtust pakkuda.
     <br>
     <br>
     <h4><i>Kuidas ma saan MVP printsiipi kasutada oma IT projektides:</i></h4>
@@ -95,7 +97,14 @@
     <p><i><strong>Remote Git-repository loomiseks ja sellega töötamiseks järgige neid samme:</strong></i></p>
     <!--Loend ja alamloend-->
     <uL id="ul1">
-        <li>Looge uus repository <strong>GitHub-is</strong>
+        <li>Looge kaust arvutis tulevase repo jaoks</li>
+        <li>Kasutage terminalis järgmist käsku:
+        <ul>
+            <li><strong>cd S:\Targv24git</strong> — minge kausta</li>
+            <li><strong>git init <i>repo_nimi</i></strong> — loob uue kohaliku Git-i repo kaustas SmolinaGit</li>
+        </ul>
+        </li>
+        <li>Looge uus repository <strong>GitHub-is:</strong>
         <ul>
             <li>Avage <strong>GitHub</strong> ja logige sisse oma kontole</li>
             <li>Klõpsake nuppu <strong>New repository</strong></li>
@@ -105,13 +114,21 @@
         <li>Valige <strong>SSH</strong> URL ja kopeerige seda</li>
         <li>Remote repo tegemiseks kasutage terminalis järgmist käsku:
             <uL>
-                <li><strong>git remote add origin</strong><i> https://github.com/teie_kasutajanimi/repository_nimi.git</i> — määrab kaugrepo, kuhu teie kohalik kood saadetakse</li>
+                <li><strong>git remote add origin</strong><i> https://github.com/teie_kasutajanimi/repo_nimi.git</i> — seostab kohalik repo kaugrepoga (GitHubis)</li>
             </uL>
         </li>
         <li>Kontrollige kaug-repositooriumi sidumist:
             <uL>
                 <li><strong>git remote -v</strong> — kui olete loonud või liitunud olemasoleva kaugrepo'ga, saate kaugrepo URL-i kontrollida järgmise käsuga</li>
             </uL>
+        </li>
+        <li>Lisage failid oma repole</li>
+        <li>Kasutage terminalis:
+        <ul>
+            <li><strong>git add . </strong>— lisab kõik muudatused jälgitavates failides Git-i indekse</li>
+            <li><strong>git commit -m "<i>Kommentaar</i>" </strong>— salvestab muudatused lokaalses repositooriumis koos kommentaariga, mis kirjeldab muudatusi</li>
+            <li><strong>git push </strong>— saadab lokaalsed muudatused kaug-repositooriumisse</li>
+        </ul>
         </li>
     </uL>
     <img id="repo" src="repo.png" alt="repo"/>
@@ -121,7 +138,6 @@
                 <li><strong>git remote remove origin</strong> <i>"repo nimi"</i> — eemaldab kaug-repositooriumi</li>
                 <li><strong>git remote set-url</strong> — muudab kaug-repositooriumi URL-i</li>
                 <li><strong>git remote rename</strong><i> "vana repo nimi" "uus repo nimi"</i> — muudab kaug-repositooriumi nime</li>
-                <li><strong>git push</strong> — saadab lokaalsed muudatused kaug-repositooriumisse</li>
                 <li><strong>git pull</strong> — tõmbab kaug-repositooriumist muudatused kohalikku repositooriumisse</li>
             </ul>
         </li>
